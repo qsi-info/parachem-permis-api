@@ -14,6 +14,7 @@ module.exports = {
   	WOR_NO: 'STRING',
   	PERMIS: 'STRING',
   	WOR_DESCR: 'STRING',
+  	WSQ_PREF: 'STRING',
 
   }
 };

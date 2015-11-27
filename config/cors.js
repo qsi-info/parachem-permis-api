@@ -74,8 +74,7 @@ module.exports.cors = {
   ***************************************************************************/
 
    //headers: 'content-type'
-   //headers: 'if-modified-since,content-type',
-   
-   exposeHeaders: 'if-modified-since',
+   headers: 'if-modified-since, content-type',
+  
 
 };

@@ -74,6 +74,6 @@ module.exports.cors = {
   ***************************************************************************/
 
    //headers: 'content-type'
-   headers: 'Angular-IE-Cache'
+   headers: 'if-modified-since,content-type'
 
 };

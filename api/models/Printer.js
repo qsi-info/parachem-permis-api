@@ -9,7 +9,7 @@ module.exports = {
 
 	connection: 'guide_gesperm',
 
-	tableName: 'Imprimantes'
+	tableName: 'Imprimantes',
 
   attributes: {
   	

@@ -52,7 +52,7 @@ module.exports.connections = {
     module: 'sails-sqlserver',
     user: 'SP_RO',
     password: 'password',
-    database: 'GesPerm_Dev',
+    database: 'QSI_GestPerm',
     host: 'guidesrv01',
     port: 1433,
     schema: true,

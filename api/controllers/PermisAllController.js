@@ -8,12 +8,20 @@
 module.exports = {
 	
 	all: function (req, res) {
-	  PermisView.query("SELECT TOP 300 * FROM Permis ORDER BY id DESC", function (err, p) {
-	    if (err) {
-	      return res.json(err);
-	    }
-	    res.json(p);
-	  })
+	  if (req.query[WOR_NO] !== 'undefined') {
+	    PermisView.find().where(req.query).exec(function (err, p) {
+	      if (err) { return res.json(err) }
+	      res.json(p);
+	    })
+	  } else {
+	   	PermisView.query("SELECT TOP 300 * FROM Permis ORDER BY id DESC", function (err, p) {
+  	    if (err) {
+  	      return res.json(err);
+  	    }
+  	    res.json(p);
+  	  }) 
+	  }
+
 	  /*
 		PermisAll.find().limit(300).then(function (permis) {
 			res.json(permis);

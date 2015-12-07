@@ -8,9 +8,9 @@
 module.exports = {
 	
 	all: function (req, res) {
-	  console.log(req.query);
-	  if (req.query['WOR_NO']) {
-	    PermisView.query("SELECT * FROM Permis WHERE WOR_NO=" + req.query['WOR_NO'], function (err, p) {
+	  console.log(req.params);
+	  if (req.params['WOR_NO']) {
+	    PermisView.query("SELECT * FROM Permis WHERE WOR_NO=" + req.params['WOR_NO'], function (err, p) {
 	      if (err) { return res.json(err) }
 	      res.json(p);
 	    })

@@ -8,7 +8,7 @@
 module.exports = {
 	
 	all: function (req, res) {
-		PermisAll.find().then(function (permis) {
+		PermisAll.find().limit(300).then(function (permis) {
 			res.json(permis);
 		});
 	},

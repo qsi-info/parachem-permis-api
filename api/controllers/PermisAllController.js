@@ -9,7 +9,7 @@ module.exports = {
 	
 	all: function (req, res) {
 	  if (req.query['WOR_NO'] !== 'undefined') {
-	    PermisView.query("SELECT * FROM Permis WHERE WOR_NO=" + req.query['WOR_NO'], function (err, p) {
+	    PermisView.query("SELECT * FROM Permis WHERE WOR_NO='" + req.query['WOR_NO'] + "'", function (err, p) {
 	      if (err) { return res.json(err) }
 	      res.json(p);
 	    })

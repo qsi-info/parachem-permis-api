@@ -39,7 +39,7 @@ module.exports.connections = {
   pi_connect: {
     adapter: 'sails-sqlserver',
     user: 'SP_RO',
-    password: 'password',
+    password: 'password123',
     host: 'paradevsrv02',
     database: 'PiConnect',
     port: 1433,

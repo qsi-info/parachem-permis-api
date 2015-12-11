@@ -43,7 +43,8 @@ module.exports.connections = {
     host: 'paradevsrv02',
     database: 'PiConnect',
     port: 1433,
-    migrate: 'safe'
+    migrate: 'safe',
+    schema: true,
   },
 
 

@@ -36,6 +36,17 @@ module.exports.connections = {
 
 
 
+  pi_connect: {
+    adapter: 'sails-sqlserver',
+    user: 'SP_RO',
+    password: 'password',
+    host: 'paradevsrv02',
+    database: 'PiConnect',
+    port: 1433,
+    migrate: 'safe'
+  },
+
+
   // guide_gesperm: {
   //   module: 'sails-sqlserver',
   //   user: 'SP_RO',

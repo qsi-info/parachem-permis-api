@@ -1,14 +1,12 @@
 module.exports = {
   
-  test: function (req, res) {
-    console.log('yo');
-    console.log(PiConnect);
-    PiConnect.find().then(function (p) {
-      res.json(p);
-    })
-    .fail(function (err) {
-      console.log(err);
-      res.json(err);
+  last: function (req, res) {
+    PiConnect.query("SELECT TOP 1 * FROM [dbo].[QSI_Values] ORDER BY CREATED_AT DESC ").exec(function (err, results) {
+      if (err) {
+        return res.json(err);
+      } else {
+        res.json(results);
+      }
     })
   }
 }

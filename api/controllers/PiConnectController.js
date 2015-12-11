@@ -5,7 +5,11 @@ module.exports = {
       if (err) {
         return res.json(err);
       } else {
-        res.json(results);
+        if (results.length > 0) {
+          res.json(results[0])
+        } else {
+           res.json(results); 
+        }
       }
     })
   }

@@ -2,7 +2,7 @@ module.exports = {
 
 	connection: 'pi_connect',
 
-	tableName: 'dbo.QSI_Values',
+	tableName: 'QSI_Values',
 
   attributes: {
 

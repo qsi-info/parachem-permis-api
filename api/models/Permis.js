@@ -148,6 +148,7 @@ module.exports = {
   	S1_Type_AC: { type: 'boolean', defaultsTo: false },
   	S1_Type_AF: { type: 'boolean', defaultsTo: false },
   	S1_Type_TR: { type: 'boolean', defaultsTo: false },
+  	cadenas: 'STRING',
 
 
     toJSON: function () {
